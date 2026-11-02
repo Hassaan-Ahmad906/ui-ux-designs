@@ -34,7 +34,6 @@ studynest-lab07/
 │   ├── menu.svg
 │   └── close.svg
 ├── .vscode/mcp.json
-├── FIGMA-FINAL-CHECK.md
 ├── README.md
 └── .gitignore
 ```
