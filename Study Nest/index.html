@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="StudyNest helps students organize assignments, goals and deadlines in one calming workspace."
+    />
+    <title>StudyNest — Make room for your best work</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a href="#home" class="brand" aria-label="StudyNest home"
+          ><span class="brand-symbol" aria-hidden="true">✦</span>StudyNest</a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="#features">Features</a
+          ><a href="#how-it-works">How it works</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <a class="button button-primary nav-cta" href="#contact">Get started</a>
+      </div>
+    </header>
+    <main id="home">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow-pill">✦ YOUR SPACE TO STUDY SMARTER</p>
+          <h1 id="hero-title">Make room for<br />your best work.</h1>
+          <p class="lead">
+            One calm place to plan assignments, track goals and stay on top of
+            student life.
+          </p>
+          <div class="cta-row">
+            <a class="button button-primary" href="#contact"
+              >Start planning <span aria-hidden="true">→</span></a
+            ><a class="button button-outline" href="#features"
+              >Explore features</a
+            >
+          </div>
+          <p class="social-proof">
+            <span aria-label="5 out of 5 stars">★★★★★</span> &nbsp; Made for
+            focused students
+          </p>
+        </div>
+        <div
+          class="dashboard"
+          aria-label="Example study dashboard showing 76 percent weekly progress and three planned tasks"
+        >
+          <div class="dashboard-header">
+            <h2>Your study overview</h2>
+            <span aria-hidden="true">•••</span>
+          </div>
+          <div class="progress-panel">
+            <span class="progress-label">WEEKLY PROGRESS</span
+            ><strong>76% on track</strong>
+            <div class="progress-track">
+              <span class="progress-fill"></span>
+            </div>
+          </div>
+          <ul class="tasks">
+            <li>
+              <span class="task-check" aria-hidden="true">☑</span>
+              <div>
+                <strong>Finish HCI assignment</strong><small>Today</small>
+              </div>
+            </li>
+            <li>
+              <span class="task-check" aria-hidden="true">□</span>
+              <div>
+                <strong>Revise algorithms</strong><small>Tomorrow</small>
+              </div>
+            </li>
+            <li>
+              <span class="task-check" aria-hidden="true">□</span>
+              <div>
+                <strong>Team project meeting</strong><small>Friday</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="features-section"
+        id="features"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <p class="section-label">EVERYTHING YOU NEED</p>
+          <h2 id="features-title">Less chaos. More progress.</h2>
+          <p class="section-intro">
+            Simple tools to help you stay organized without the overwhelm.
+          </p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">✓</span>
+              <h3>Plan with clarity</h3>
+              <p>
+                Keep your classes, assignments and deadlines in one organized
+                space.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">↗</span>
+              <h3>Track your goals</h3>
+              <p>
+                See what you have accomplished and keep your momentum going.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">◷</span>
+              <h3>Focus on what matters</h3>
+              <p>
+                Build better study habits with a distraction-free workspace.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="how-section container"
+        id="how-it-works"
+        aria-labelledby="how-title"
+      >
+        <p class="section-label">GET STARTED</p>
+        <h2 id="how-title">Your next step, simplified.</h2>
+        <p>
+          Choose a goal, break it into manageable tasks, and follow your
+          progress each day.
+        </p>
+      </section>
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2 id="contact-title">Have a question?<br />Say hello.</h2>
+            <p>We'd love to hear your ideas and feedback.</p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="full-name">Name</label
+            ><input
+              id="full-name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              autocomplete="name"
+              required
+              minlength="2"
+            /><label for="email">Email</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            /><label for="message">Message</label
+            ><textarea
+              id="message"
+              name="message"
+              placeholder="Write your message..."
+              rows="4"
+              required
+              minlength="10"
+            ></textarea
+            ><button class="button button-primary" type="submit">
+              Send message →
+            </button>
+            <p
+              id="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <a href="#home" class="footer-brand">✦ StudyNest</a
+        ><span>© 2026 StudyNest</span>
+      </div>
+    </footer>
+  </body>
+</html>
